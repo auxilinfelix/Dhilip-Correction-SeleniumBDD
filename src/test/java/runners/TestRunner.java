@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
                 "junit:target/junit-results.xml",
                 "json:target/cucumber.json"
         }, monochrome = true,
-         tags = "@regression_check",
+         tags = "@smoke or @smoke_API or @regression or @regression_check",
         dryRun = false)
 public class TestRunner {
 
