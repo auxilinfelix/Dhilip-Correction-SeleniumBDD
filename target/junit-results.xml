@@ -1,44 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="37.609" tests="3" skipped="0" failures="0" errors="0">
-<testcase classname="API_Web_React_CRUD_Scenarios" name="Get method using react app all training records" time="7.111">
+<testsuite name="Cucumber" time="5.968" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Web_DemoSaas_Login_Validation" name="Successful login" time="5.679">
 <system-out><![CDATA[
-Given url and getting all training records..................................passed
-Then verify response code should be 200.....................................passed
-Then verify response has list of trainings..................................passed
-Then print first training record............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="API_Web_React_CRUD_Scenarios" name="Crud react app training flow" time="10.094">
-<system-out><![CDATA[
-Given url and getting all training records..................................passed
-Then verify response code should be 200.....................................passed
-Then verify response has list of trainings..................................passed
-Then print first training record............................................passed
-When I create a new training record.........................................passed
-Then the response code should be 201........................................passed
-And I store the training ID from response...................................passed
-When I update the training record using stored ID...........................passed
-Then the response code should be 200........................................passed
-When I delete the training record using stored ID...........................passed
-Then the response code should be 204........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="API_Web_React_CRUD_Scenarios" name="Crud flow in Api and UI" time="20.027">
-<system-out><![CDATA[
-Given url and getting all training records..................................passed
-Then verify response code should be 200.....................................passed
-Then verify response has list of trainings..................................passed
-Then print first training record............................................passed
-When I create a new training record.........................................passed
-Then the response code should be 201........................................passed
-And I store the training ID from response...................................passed
-Then I verify the new training record is visible on the web UI..............passed
-When I update the training record using stored ID...........................passed
-Then the response code should be 200........................................passed
-Then I verify the updated training record is reflected on the web UI........passed
-When I delete the training record using stored ID...........................passed
-Then the response code should be 204........................................passed
-Then I verify the training record is no longer visible on the web UI........passed
+Given I open the login page.................................................passed
+When I enter valid credentials..............................................passed
+Then I should see the homepage..............................................passed
+And I click logout..........................................................passed
+And validate the response message "success".................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

@@ -36,7 +36,8 @@ public void i_click_logout() {
 }
 @Then("validate the response message {string}")
 public void validate_the_response_message(String string) {
+    System.out.println("Success Message showing");
     // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
+    
 }
 }

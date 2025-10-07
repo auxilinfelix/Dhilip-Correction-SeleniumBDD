@@ -13,6 +13,7 @@ import io.cucumber.junit.CucumberOptions;
                 "json:target/cucumber.json"
         }, monochrome = true,
          tags = "@all or @smoke or @smoke_API or @regression or @regression_check",
+         
         dryRun = false)
 public class TestRunner {
 

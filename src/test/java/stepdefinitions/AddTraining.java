@@ -52,9 +52,9 @@ public class AddTraining extends BaseClass {
 
         WebElement element = driver.findElement(By.xpath("//input[@name='percentCompleted']"));
         element.clear();
-        BaseClass.winWait(500);
+        BaseClass.winWait(2000);
         sendKeys(element, percentage);
-        BaseClass.winWait(500);
+        BaseClass.winWait(2000);
 
     }
 

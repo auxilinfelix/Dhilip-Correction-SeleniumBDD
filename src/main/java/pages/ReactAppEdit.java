@@ -33,12 +33,12 @@ public void projectNameEmployeeNameVisible(){
     Assert.assertTrue("Employee Name not visible", employeeNameisVisible);
 }
 public void searchEmployeename(String employeename){
-   WebElement serachemployeename= driver.findElement(By.id("«r8»"));
+   WebElement serachemployeename= driver.findElement(By.xpath("(//input[@type=\"text\"])[2]"));
     serachemployeename.sendKeys(Keys.chord(Keys.CONTROL, "a"), Keys.DELETE);
     serachemployeename.sendKeys(employeename);
 }
 public void searchCourse(String course){
-   WebElement serachcourse= driver.findElement(By.id("«r9»"));
+   WebElement serachcourse= driver.findElement(By.xpath("(//input[@type=\"text\"])[3]"));
     serachcourse.sendKeys(Keys.chord(Keys.CONTROL, "a"), Keys.DELETE);
     serachcourse.sendKeys(course);
 }
