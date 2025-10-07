@@ -1,3 +1,4 @@
+@all
 @regression_check
 Feature: Web_React_Create_Edit_And_Delete
 

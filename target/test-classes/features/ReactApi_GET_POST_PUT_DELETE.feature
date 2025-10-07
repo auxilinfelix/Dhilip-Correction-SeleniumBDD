@@ -1,3 +1,4 @@
+@all
 @smoke_API
 Feature: API_Web_React_E-E_Validation
 Background:

@@ -1,3 +1,4 @@
+@all
 @regression
 Feature: Web_AutomationExercise_Register_Functionality
 

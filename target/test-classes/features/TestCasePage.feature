@@ -1,4 +1,4 @@
-
+@all
 @smoke
 Feature: Web_AutomationExercise_Forms_Validation
 
