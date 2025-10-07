@@ -95,6 +95,11 @@ public class BaseClass {
         return LocalDateTime.now().format(formatter);
     }
 
+    public static String getCurrentDate() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        return LocalDateTime.now().format(formatter);
+    }
+
     public static void pressUp(int count) throws InterruptedException {
         Actions actions = new Actions(driver);
         for (int i = 0; i < count; i++) {

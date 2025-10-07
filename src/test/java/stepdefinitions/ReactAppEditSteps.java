@@ -54,7 +54,7 @@ public void search_for_employeename(String employeename) {
 @Then("click delete on frist record")
 public void click_delete_on_frist_record() throws InterruptedException {
     BaseClass.winWait(1000);
-edit.deleteTrainingClick();
+    edit.deleteTrainingClick();
 }
 @Then("delete all records of {string} course")
 public void delete_all_records_of_course(String coursename) {
@@ -62,12 +62,12 @@ edit.deleteAllByCourseRecords(coursename);
 }
 @Then("filter Start Date by CurrentdateTime")
 public void filter_start_date_by_CurrentdateTime() {
-    BaseClass.filterStartDate(getCurrentDateTime());
+    BaseClass.filterStartDate(getCurrentDate());
 }
 
 @Then("verify filtered records have CurrentdateTime")
 public void verify_filtered_records_have_CurrentdateTime() {
-    String expecteddate = getCurrentDateTime();
+    String expecteddate = getCurrentDate();
     edit.verifyRecordswithGivenStartDate(expecteddate);
 }
 }

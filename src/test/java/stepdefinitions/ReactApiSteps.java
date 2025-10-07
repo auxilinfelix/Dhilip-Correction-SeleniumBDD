@@ -5,7 +5,6 @@ import java.util.Map;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-
 import common.BaseClass;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -50,6 +49,7 @@ List<Map<String, Object>> trainings = response.jsonPath().getList("$");
 @When("I create a new training record")
 public void i_create_a_new_training_record() {
     String body = "{"
+    + "\"empId\": \"A1345\","
     + "\"employeeName\": \"Mark\","
     + "\"course\": \"JavaScript\","
     + "\"startDate\": \"2025-01-01T00:00:00.000Z\","
@@ -71,19 +71,23 @@ public void i_create_a_new_training_record() {
             .response();
 }
 @Then("the response code should be {int}")
-    public void the_response_code_should_be(int expectedStatusCode) {
+    public void the_response_code_should_be(int expectedStatusCode) throws InterruptedException {
+        BaseClass.winWait(2000);
         Assert.assertEquals(expectedStatusCode, response.getStatusCode());
 }
+
 @Then("I store the training ID from response")
 public void i_store_the_training_id_from_response() {
     createdTrainingId = response.jsonPath().getString("_id");
     Assert.assertNotNull("Training ID should not be null", createdTrainingId);
     System.out.println("Stored Training ID: " + createdTrainingId);
 }
+
 @When("I update the training record using stored ID")
     public void i_update_the_training_record_using_stored_id() {
         Assert.assertNotNull("Training ID is not set", createdTrainingId);
         String updatedBody = "{"
+                + "\"empId\": \"R1372\","
                 + "\"employeeName\": \"MarkAntony\","
                 + "\"course\": \"JavaScript Advanced\","
                 + "\"startDate\": \"2025-01-01T00:00:00.000Z\","
