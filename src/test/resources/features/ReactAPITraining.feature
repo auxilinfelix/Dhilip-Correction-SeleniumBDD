@@ -1,4 +1,3 @@
-@restassured
 @regression
 Feature: API_Web_React_CRUD_Scenarios
 @demo
