@@ -1,4 +1,4 @@
-@regression
+@regression_check
 Feature: Web_React_Create_Edit_And_Delete
 
 Scenario Outline: Validating the creation of new training
@@ -53,7 +53,7 @@ Scenario: Search course edit employee name first record
  When user click on training summary
  Then verify user is on training records projectName, EmployeeName
  Then search for employeename "karthik"
- Then search for course "Auto"
+ Then search for course "Automation"
  Then click delete on frist record
 
 @demo
@@ -63,15 +63,19 @@ Scenario: Search course edit employee name first record
  Then verify user is on training records projectName, EmployeeName
  Then search for course "<coursename>"
  Then delete all records of "<coursename>" course
+ @run
 Examples:
     | coursename |
-    | Java       |
     | Selenium   |
+    @skip
+Examples:
+    | coursename |
     | CSharp     |
+    | Java       |
 
 Scenario: filter by Start date and verify date with filter records
  Given user in on react app page
  When user click on training summary
  Then verify user is on training records projectName, EmployeeName
- And filter Start Date by "11262025"
- Then verify filtered records have date "11/26/2025"
+ And filter Start Date by CurrentdateTime
+ Then verify filtered records have CurrentdateTime

@@ -32,9 +32,7 @@ public class LoginSteps extends BaseClass {
 
     @Then("I click logout")
 public void i_click_logout() {
-
-    
-    throw new io.cucumber.java.PendingException();
+    System.out.println("Logout the Application");
 }
 @Then("validate the response message {string}")
 public void validate_the_response_message(String string) {

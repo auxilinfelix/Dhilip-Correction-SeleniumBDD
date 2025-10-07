@@ -71,7 +71,7 @@ public void updateClick(){
     driver.findElement(By.xpath("//button[text()='Update']")).click();
 }
 public void deleteTrainingClick(){
-    driver.findElement(By.xpath("//button[@aria-label='delete'][1]")).click();
+    driver.findElement(By.xpath("(//button[@aria-label=\"delete\"])[1]")).click();
 }
 public void deleteAllByCourseRecords(String coursename){
     List<WebElement> courseRows=driver.findElements(By.xpath("//td[text()='" + coursename + "']"));
@@ -93,6 +93,7 @@ public void filterStartDate(String startdate){
     WebElement startDateElement=driver.findElement(By.xpath("(//input[@type=\"date\"])[1]"));
     startDateElement.sendKeys(startdate);
 }
+
 public void verifyRecordswithGivenStartDate(String expecteddate){
 List<WebElement> rows=driver.findElements(By.xpath("//table/tbody/tr"));
 for (WebElement row : rows) {

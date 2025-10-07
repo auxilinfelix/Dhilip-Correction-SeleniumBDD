@@ -3,6 +3,8 @@ package common;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Random;
 
@@ -56,6 +58,19 @@ public class BaseClass {
         Thread.sleep(millis);
     }
 
+    public String waitinputText(Object elementOrLocator, String value, int num) {
+      WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(num));
+       WebElement element = null;
+      if (elementOrLocator instanceof WebElement) {
+         element = (WebElement)wait.until(ExpectedConditions.visibilityOf((WebElement)elementOrLocator));
+      } else if (elementOrLocator instanceof By) {
+         element = (WebElement)wait.until(ExpectedConditions.visibilityOfElementLocated((By)elementOrLocator));
+      }
+
+      element.sendKeys(new CharSequence[]{value});
+      return value;
+   }
+
     public static void explicitWaitClick(String xpath) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath))).click();
@@ -73,6 +88,11 @@ public class BaseClass {
             actions.sendKeys(Keys.DOWN).perform();
             Thread.sleep(500); // slight wait to simulate user interaction
         }
+    }
+
+    public static String getCurrentDateTime() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss");
+        return LocalDateTime.now().format(formatter);
     }
 
     public static void pressUp(int count) throws InterruptedException {
@@ -108,13 +128,12 @@ public class BaseClass {
         Random random = new Random();
         int randomNum = random.nextInt(num);
         return randomNum;
-
     }
 
     public static void takesScreenshot() throws IOException {
         TakesScreenshot ts = (TakesScreenshot) driver;
         File src = ts.getScreenshotAs(OutputType.FILE);
-        File path = new File("C:\\Users\\malbert\\Desktop\\screenshots\\WebSample\\Screenshots\\image.jpg");
+        File path = new File("C:\\Users\\aarulfrancis\\Desktop\\screenshots\\WebSample\\Screenshots\\image.jpg");
         FileHandler.copy(src, path);
     }
 
@@ -128,9 +147,7 @@ public class BaseClass {
     public static void js_ScrollDown(int i) {
         driver = new ChromeDriver();
         JavascriptExecutor js = (JavascriptExecutor) driver;
-
         js.executeScript("window.scrollBy(0,i)");
-
     }
 
 }

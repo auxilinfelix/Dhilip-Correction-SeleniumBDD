@@ -30,6 +30,7 @@ public class ReactApi_P_G_P_D extends BaseClass {
 
         response = given().log().all().header("Content-Type", "application/json")
                 .body("{\r\n" +
+                        "    \"empId\": \"A1345\",\r\n" +
                         "    \"employeeName\": \"" + randStr + "\",\r\n" +
                         "    \"course\": \"Playwright\",\r\n" +
                         "    \"startDate\": \"2025-05-17T00:00:00.000Z\",\r\n" +
@@ -90,6 +91,7 @@ public class ReactApi_P_G_P_D extends BaseClass {
 
         response = given().log().all().header("Content-Type", "application/json")
                 .body("{\r\n" +
+                         "    \"empId\": \"A1345\",\r\n" +
                         "    \"employeeName\": \"" + name2 + "\",\r\n" +
                         "    \"course\": \"Playwright\",\r\n" +
                         "    \"startDate\": \"2025-05-17T00:00:00.000Z\",\r\n" +

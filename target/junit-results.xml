@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="2,118.054" tests="52" skipped="0" failures="7" errors="0">
-<testcase classname="Web_React_Create_New_Record" name="Validating the creation of new training - Example #1.1" time="34.77">
+<testsuite name="Cucumber" time="190.217" tests="12" skipped="0" failures="7" errors="0">
+<testcase classname="Web_React_Create_Edit_And_Delete" name="Validating the creation of new training - Example #1.1" time="33.029">
 <system-out><![CDATA[
 Given launch the employee training url "http://10.192.190.130:3000/"........passed
 When click the add training button..........................................passed
@@ -18,7 +18,7 @@ And click the add button....................................................pass
 Then verify if the page is navigated to details page........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Web_React_Create_New_Record" name="Validating the creation of new training - Example #1.2" time="32.951">
+<testcase classname="Web_React_Create_Edit_And_Delete" name="Validating the creation of new training - Example #1.2" time="35.909">
 <system-out><![CDATA[
 Given launch the employee training url "http://10.192.190.130:3000/"........passed
 When click the add training button..........................................passed
@@ -36,7 +36,7 @@ And click the add button....................................................pass
 Then verify if the page is navigated to details page........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Web_React_Create_New_Record" name="Validating the creation of new training - Example #1.3" time="33.967">
+<testcase classname="Web_React_Create_Edit_And_Delete" name="Validating the creation of new training - Example #1.3" time="35.401">
 <system-out><![CDATA[
 Given launch the employee training url "http://10.192.190.130:3000/"........passed
 When click the add training button..........................................passed
@@ -54,7 +54,7 @@ And click the add button....................................................pass
 Then verify if the page is navigated to details page........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Web_React_Create_New_Record" name="Validating the creation of new training - Example #1.4" time="34.922">
+<testcase classname="Web_React_Create_Edit_And_Delete" name="Validating the creation of new training - Example #1.4" time="33.068">
 <system-out><![CDATA[
 Given launch the employee training url "http://10.192.190.130:3000/"........passed
 When click the add training button..........................................passed
@@ -72,7 +72,7 @@ And click the add button....................................................pass
 Then verify if the page is navigated to details page........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Web_React_Create_New_Record" name="Validating the creation of new training - Example #1.5" time="37.715">
+<testcase classname="Web_React_Create_Edit_And_Delete" name="Validating the creation of new training - Example #1.5" time="32.562">
 <system-out><![CDATA[
 Given launch the employee training url "http://10.192.190.130:3000/"........passed
 When click the add training button..........................................passed
@@ -90,700 +90,633 @@ And click the add button....................................................pass
 Then verify if the page is navigated to details page........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Web_React_Create_New_Record" name="Creation of new Training with Empty EmployeeName field - Example #1.1" time="47.536">
-<system-out><![CDATA[
-Given launch the employee training url "http://10.192.190.130:3000/"........passed
-When click the add training button..........................................passed
-And verify the user is navigated to the add training page...................passed
-And Select the project name "0".............................................passed
-And enter the name of employee 0............................................passed
-And enter the course "Selenium".............................................passed
-And enter the name of trainer 6.............................................passed
-And select the training type "0"............................................passed
-And enter the start date "07232025".........................................passed
-And enter the end date "07252025"...........................................passed
-And select the status "0"...................................................passed
-And enter the completion percentage 100.....................................passed
-And click the add button....................................................passed
-Then verify if the error msg is shown.......................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_React_Create_New_Record" name="Creation of new Training with Empty course field - Example #1.1" time="48.554">
-<system-out><![CDATA[
-Given launch the employee training url "http://10.192.190.130:3000/"........passed
-When click the add training button..........................................passed
-And verify the user is navigated to the add training page...................passed
-And Select the project name "0".............................................passed
-And enter the name of employee 8............................................passed
-And enter the name of trainer 6.............................................passed
-And select the training type "0"............................................passed
-And enter the start date "07232025".........................................passed
-And enter the end date "07252025"...........................................passed
-And select the status "0"...................................................passed
-And enter the completion percentage 100.....................................passed
-And click the add button....................................................passed
-Then verify if the error msg is shown.......................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_React_Create_New_Record" name="Creation of new Training with Empty trainerName field - Example #1.1" time="35.087">
-<system-out><![CDATA[
-Given launch the employee training url "http://10.192.190.130:3000/"........passed
-When click the add training button..........................................passed
-And verify the user is navigated to the add training page...................passed
-And Select the project name "0".............................................passed
-And enter the name of employee 8............................................passed
-And enter the course "Selenium".............................................passed
-And select the training type "0"............................................passed
-And enter the start date "07232025".........................................passed
-And enter the end date "07252025"...........................................passed
-And select the status "0"...................................................passed
-And enter the completion percentage 100.....................................passed
-And click the add button....................................................passed
-Then verify if the error msg is shown.......................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_React_Create_New_Record" name="Creation of new Training with Empty text fields - Example #1.1" time="31.863">
-<system-out><![CDATA[
-Given launch the employee training url "http://10.192.190.130:3000/"........passed
-When click the add training button..........................................passed
-And verify the user is navigated to the add training page...................passed
-And Select the project name "0".............................................passed
-And select the training type "0"............................................passed
-And enter the start date "07232025".........................................passed
-And enter the end date "07252025"...........................................passed
-And select the status "0"...................................................passed
-And enter the completion percentage 100.....................................passed
-And click the add button....................................................passed
-Then verify if the error msg is shown.......................................passed
-]]></system-out>
-</testcase>
-<testcase classname="API_Web_React_CRUD_Scenarios" name="Get method using react app all training records" time="6.225">
-<system-out><![CDATA[
-Given url and getting all training records..................................passed
-Then verify response code should be 200.....................................passed
-Then verify response has list of trainings..................................passed
-Then print first training record............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="API_Web_React_CRUD_Scenarios" name="Crud react app training flow" time="3.763">
-<failure type="java.lang.AssertionError" message="expected:&lt;201&gt; but was:&lt;500&gt;">
-<![CDATA[java.lang.AssertionError: expected:<201> but was:<500>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at stepdefinitions.ReactApiSteps.the_response_code_should_be(ReactApiSteps.java:75)
-	at ✽.the response code should be 201(file:///C:/Users/aarulfrancis/Downloads/Selenium-BDD-main%20(2)/Selenium-BDD-main/src/test/resources/features/ReactAPITraining.feature:17)
-]]>
-</failure>
-<system-out><![CDATA[
-Given url and getting all training records..................................passed
-Then verify response code should be 200.....................................passed
-Then verify response has list of trainings..................................passed
-Then print first training record............................................passed
-When I create a new training record.........................................passed
-Then the response code should be 201........................................failed
-And I store the training ID from response...................................skipped
-When I update the training record using stored ID...........................skipped
-Then the response code should be 200........................................skipped
-When I delete the training record using stored ID...........................skipped
-Then the response code should be 204........................................skipped
-]]></system-out>
-</testcase>
-<testcase classname="API_Web_React_CRUD_Scenarios" name="Crud flow in Api and UI" time="3.692">
-<failure type="java.lang.AssertionError" message="expected:&lt;201&gt; but was:&lt;500&gt;">
-<![CDATA[java.lang.AssertionError: expected:<201> but was:<500>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at stepdefinitions.ReactApiSteps.the_response_code_should_be(ReactApiSteps.java:75)
-	at ✽.the response code should be 201(file:///C:/Users/aarulfrancis/Downloads/Selenium-BDD-main%20(2)/Selenium-BDD-main/src/test/resources/features/ReactAPITraining.feature:32)
-]]>
-</failure>
-<system-out><![CDATA[
-Given url and getting all training records..................................passed
-Then verify response code should be 200.....................................passed
-Then verify response has list of trainings..................................passed
-Then print first training record............................................passed
-When I create a new training record.........................................passed
-Then the response code should be 201........................................failed
-And I store the training ID from response...................................skipped
-Then I verify the new training record is visible on the web UI..............skipped
-When I update the training record using stored ID...........................skipped
-Then the response code should be 200........................................skipped
-Then I verify the updated training record is reflected on the web UI........skipped
-When I delete the training record using stored ID...........................skipped
-Then the response code should be 204........................................skipped
-Then I verify the training record is no longer visible on the web UI........skipped
-]]></system-out>
-</testcase>
-<testcase classname="API_Web_React_E-E_Validation" name="Post_Request" time="4.028">
-<failure type="java.lang.AssertionError" message="1 expectation failed.
-Expected status code &lt;201&gt; but was &lt;500&gt;.
-">
-<![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <201> but was <500>.
+<testcase classname="Web_React_Create_Edit_And_Delete" name="Edit first record sucessfully" time="2.636">
+<failure type="io.cucumber.core.exception.CucumberException" message="Failed to instantiate class stepdefinitions.ReactAppEditSteps">
+<![CDATA[io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.ReactAppEditSteps
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
+	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
+	... 45 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import pages.ReactAppEdit cannot be resolved
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
 
+	at stepdefinitions.ReactAppEditSteps.<init>(ReactAppEditSteps.java:9)
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepdefinitions.ReactApi_P_G_P_D.i_send_a_post_request_to_the_api_with_endpoint_and_name(ReactApi_P_G_P_D.java:45)
-	at ✽.I send a POST request to the API with endpoint "/api/trainings" and name 7(file:///C:/Users/aarulfrancis/Downloads/Selenium-BDD-main%20(2)/Selenium-BDD-main/src/test/resources/features/ReactApi_GET_POST_PUT_DELETE.feature:7)
+	... 48 more
 ]]>
 </failure>
 <system-out><![CDATA[
-Given The base URI of API is "http://10.192.190.130:5000"...................passed
-When I send a POST request to the API with endpoint "/api/trainings" and name 7.failed
-Then I should receive the post response.....................................skipped
-And verify the status code is "201" and post request is successful in API...skipped
-And validate if a new training is CREATED in the Web........................skipped
+Given user in on react app page.............................................failed
+When user click on training summary.........................................skipped
+Then verify user is on training records projectName, EmployeeName...........skipped
+Then click edit on frist record.............................................skipped
+And verify user is on edit training.........................................skipped
+Then I change the employeename to "Arun" and the course to "Automation".....skipped
+Then click on update button.................................................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="API_Web_React_E-E_Validation" name="Put_Request" time="3.65">
-<failure type="java.lang.AssertionError" message="1 expectation failed.
-Expected status code &lt;200&gt; but was &lt;404&gt;.
-">
-<![CDATA[java.lang.AssertionError: 1 expectation failed.
-Expected status code <200> but was <404>.
+<testcase classname="Web_React_Create_Edit_And_Delete" name="Search course edit employee name first record" time="2.594">
+<failure type="io.cucumber.core.exception.CucumberException" message="Failed to instantiate class stepdefinitions.ReactAppEditSteps">
+<![CDATA[io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.ReactAppEditSteps
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
+	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
+	... 45 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import pages.ReactAppEdit cannot be resolved
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
 
+	at stepdefinitions.ReactAppEditSteps.<init>(ReactAppEditSteps.java:9)
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 48 more
+]]>
+</failure>
+<system-out><![CDATA[
+Given user in on react app page.............................................failed
+When user click on training summary.........................................skipped
+Then verify user is on training records projectName, EmployeeName...........skipped
+Then search for course "Auto"...............................................skipped
+Then click edit on frist record.............................................skipped
+And verify user is on edit training.........................................skipped
+Then I change the employeename to "Karthik".................................skipped
+Then click on update button.................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Web_React_Create_Edit_And_Delete" name="Search employeename and course delete first record" time="3.399">
+<failure type="io.cucumber.core.exception.CucumberException" message="Failed to instantiate class stepdefinitions.ReactAppEditSteps">
+<![CDATA[io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.ReactAppEditSteps
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
+	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepdefinitions.ReactApi_P_G_P_D.i_send_a_put_request_to_the_api_with_endpoint_and_name(ReactApi_P_G_P_D.java:105)
-	at ✽.I send a PUT request to the API with endpoint "/api/trainings/" and name 6(file:///C:/Users/aarulfrancis/Downloads/Selenium-BDD-main%20(2)/Selenium-BDD-main/src/test/resources/features/ReactApi_GET_POST_PUT_DELETE.feature:13)
-]]>
-</failure>
-<system-out><![CDATA[
-Given The base URI of API is "http://10.192.190.130:5000"...................passed
-When I send a PUT request to the API with endpoint "/api/trainings/" and name 6.failed
-Then I should receive the put response......................................skipped
-And the status code contains "200" and put request is successful in API.....skipped
-And validate if the corresponding record got UPDATED in the Web.............skipped
-]]></system-out>
-</testcase>
-<testcase classname="API_Web_React_E-E_Validation" name="Get_Request" time="4.244">
-<system-out><![CDATA[
-Given The base URI of API is "http://10.192.190.130:5000"...................passed
-When I send a GET request to the API with endpoint "/api/trainings".........passed
-Then I should receive the response..........................................passed
-And the status code is "200"................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="API_Web_React_E-E_Validation" name="Delete_Request" time="13.254">
-<system-out><![CDATA[
-Given The base URI of API is "http://10.192.190.130:5000"...................passed
-When I send a DELETE request to the API with endpoint "/api/trainings/".....passed
-Then I should receive the delete response...................................passed
-And verify if the status code has "204" and delete request is successful in API.passed
-And validate if the corresponding record got DELETED in the Web.............passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_AutomationExercise_Forms_Validation" name="Verify Test Case Page" time="10.158">
-<system-out><![CDATA[
-Given launching the url "https://www.automationexercise.com/"...............passed
-When verify that the home page is visible successfully......................passed
-And Click on Test Cases button..............................................passed
-Then Verify that the user is navigated to test cases page successfully......passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_AutomationExercise_Forms_Validation" name="Verify Product Detail page" time="13.164">
-<system-out><![CDATA[
-Given launching the url "https://www.automationexercise.com/"...............passed
-When verify that the home page is visible successfully......................passed
-And Click on Products button................................................passed
-And Verify that the user is navigated to the ALL PRODUCTS page successfully.passed
-And click on view product of first product..................................passed
-And user is landed to product detail page...................................passed
-Then Verify that detail is visible: product name, category, price, availability, condition, brand.passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_AutomationExercise_Forms_Validation" name="Add Products in cart" time="14.098">
-<system-out><![CDATA[
-Given launching the url "https://www.automationexercise.com/"...............passed
-When verify that the home page is visible successfully......................passed
-And Click on Products button................................................passed
-And click on view product of first product..................................passed
-And click on Add to cart button.............................................passed
-Then verify if the product is added to cart successfully....................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_AutomationExercise_Forms_Validation" name="Contact us form" time="27.44">
-<system-out><![CDATA[
-Given launching the url "https://www.automationexercise.com/"...............passed
-When verify that the home page is visible successfully......................passed
-And Click on Contact us button..............................................passed
-And fill the details in the form............................................passed
-And click the submit button.................................................passed
-And click on ok button......................................................passed
-Then Verify success message "Success! Your details have been submitted successfully." is visible.passed
-And Click Home button and verify that landed to home page successfully "home".passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_AutomationExercise_Forms_Validation" name="Signup page" time="20.379">
-<system-out><![CDATA[
-Given launching the url "https://www.automationexercise.com/"...............passed
-When verify that the home page is visible successfully......................passed
-And Click Signup / Login button.............................................passed
-And Fill all details in Signup and the create account.......................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_AutomationExercise_Add_To_Cart_Scenario" name="Adding review for product and validating response - Example #1.1" time="19.989">
-<system-out><![CDATA[
-Given launching the url1 "https://www.automationexercise.com/"..............passed
-When click the product button...............................................passed
-And Verify user entered the all products page...............................passed
-And click on view product...................................................passed
-And verify Write your Review element is visible.............................passed
-And enter your name "Mary"..................................................passed
-And enter the email address "a.b@gmail.com".................................passed
-And write your review "good quality"........................................passed
-And clicking the submit button..............................................passed
-Then validate the response message..........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_AutomationExercise_Add_To_Cart_Scenario" name="Add to cart from recommended items" time="18.361">
-<system-out><![CDATA[
-Given Launch the given URL "https://www.automationexercise.com/"............passed
-When Scroll to bottom of home page..........................................passed
-And verify Recommended items are visible....................................passed
-And click on add to cart....................................................passed
-And click on cart button....................................................passed
-And verify if the products are displayed....................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_AutomationExercise_Add_To_Cart_Scenario" name="Validating the brand page of products" time="27.167">
-<system-out><![CDATA[
-Given launching the url "https://www.automationexercise.com/"...............passed
-When clicking product button................................................passed
-And Verify user entered the all products page...............................passed
-And click on any brand1.....................................................passed
-And verify if the user is navigated to the particular brand page "Brand - Mast & Harbour Products".passed
-And click on any other brand................................................passed
-And verify if the user is navigated to the coresponding brand page "Brand - Madame Products".passed
-Then navigate back to the home page.........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_AutomationExercise_Add_To_Cart_Scenario" name="View products based on category" time="24.43">
-<system-out><![CDATA[
-Given launching the url "https://www.automationexercise.com/"...............passed
-When click product button...................................................passed
-And Verify user entered the all products page...............................passed
-And click on Category Women.................................................passed
-And click on a sub category.................................................passed
-And Verify that category page is displayed and confirm text "WOMEN - TOPS PRODUCTS".passed
-And click on Category Men...................................................passed
-And Verify that the category page is displayed and confirm text "Men - Tshirts Products".passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_DemoSaas_Login_Validation" name="Successful login" time="4.709">
-<failure type="io.cucumber.java.PendingException" message="TODO: implement me">
-<![CDATA[io.cucumber.java.PendingException: TODO: implement me
-	at stepdefinitions.LoginSteps.i_click_logout(LoginSteps.java:37)
-	at ✽.I click logout(file:///C:/Users/aarulfrancis/Downloads/Selenium-BDD-main%20(2)/Selenium-BDD-main/src/test/resources/features/login.feature:8)
-]]>
-</failure>
-<system-out><![CDATA[
-Given I open the login page.................................................passed
-When I enter valid credentials..............................................passed
-Then I should see the homepage..............................................passed
-And I click logout..........................................................pending
-And validate the response message "success".................................skipped
-]]></system-out>
-</testcase>
-<testcase classname="Web_RahulShetty_Frames_Alert_Validations" name="Switch to iframe and verify content" time="12.209">
-<system-out><![CDATA[
-Given I navigate to the automation practice page............................passed
-When I switch to the iframe.................................................passed
-Then I should see the "Learning Paths" link inside the iframe...............passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_RahulShetty_Frames_Alert_Validations" name="Handling Simple Alert" time="15.178">
-<system-out><![CDATA[
-Given I navigate to the automation practice page............................passed
-When I enter "<name>" in the alert textbox..................................passed
-And I click on the Alert button.............................................passed
-Then an alert with text containing "<name>" should appear...................passed
-And accept the alert........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_RahulShetty_Frames_Alert_Validations" name="Handling confirm Alert - Example #1.1" time="15.461">
-<system-out><![CDATA[
-Given I navigate to the automation practice page............................passed
-When I enter "Muthu" in the alert textbox...................................passed
-And I click on the Confirm button...........................................passed
-Then a confirm box with text containing "Muthu" should appear...............passed
-And dismiss the alert.......................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_RahulShetty_Frames_Alert_Validations" name="Handling confirm Alert - Example #1.2" time="17.421">
-<system-out><![CDATA[
-Given I navigate to the automation practice page............................passed
-When I enter "Dhilip" in the alert textbox..................................passed
-And I click on the Confirm button...........................................passed
-Then a confirm box with text containing "Dhilip" should appear..............passed
-And dismiss the alert.......................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_RahulShetty_Frames_Alert_Validations" name="Validation of elements in practicepage" time="20.572">
-<system-out><![CDATA[
-Given launch the url "https://rahulshettyacademy.com/AutomationPractice/"...passed
-When clicking the radio button..............................................passed
-And enter the conuntry name "Indi"..........................................passed
-And select the option from drop down........................................passed
-And click the check box.....................................................passed
-Then click the home button..................................................passed
-And verify if navigated to home page........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_React_Create_Edit_And_Delete" name="Validating the creation of new training - Example #1.1" time="32.526">
-<system-out><![CDATA[
-Given launch the employee training url "http://10.192.190.130:3000/"........passed
-When click the add training button..........................................passed
-And verify the user is navigated to the add training page...................passed
-And Select the project name "0".............................................passed
-And enter the name of employee 7............................................passed
-And enter the course "Selenium".............................................passed
-And enter the name of trainer 6.............................................passed
-And select the training type "0"............................................passed
-And enter the start date "07232025".........................................passed
-And enter the end date "07252025"...........................................passed
-And select the status "0"...................................................passed
-And enter the completion percentage 100.....................................passed
-And click the add button....................................................passed
-Then verify if the page is navigated to details page........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_React_Create_Edit_And_Delete" name="Validating the creation of new training - Example #1.2" time="34.289">
-<system-out><![CDATA[
-Given launch the employee training url "http://10.192.190.130:3000/"........passed
-When click the add training button..........................................passed
-And verify the user is navigated to the add training page...................passed
-And Select the project name "1".............................................passed
-And enter the name of employee 7............................................passed
-And enter the course "Playwright"...........................................passed
-And enter the name of trainer 6.............................................passed
-And select the training type "1"............................................passed
-And enter the start date "08152025".........................................passed
-And enter the end date "08162025"...........................................passed
-And select the status "1"...................................................passed
-And enter the completion percentage 100.....................................passed
-And click the add button....................................................passed
-Then verify if the page is navigated to details page........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_React_Create_Edit_And_Delete" name="Validating the creation of new training - Example #1.3" time="36.201">
-<system-out><![CDATA[
-Given launch the employee training url "http://10.192.190.130:3000/"........passed
-When click the add training button..........................................passed
-And verify the user is navigated to the add training page...................passed
-And Select the project name "2".............................................passed
-And enter the name of employee 7............................................passed
-And enter the course "Cypress"..............................................passed
-And enter the name of trainer 6.............................................passed
-And select the training type "2"............................................passed
-And enter the start date "10032025".........................................passed
-And enter the end date "10042025"...........................................passed
-And select the status "2"...................................................passed
-And enter the completion percentage 100.....................................passed
-And click the add button....................................................passed
-Then verify if the page is navigated to details page........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_React_Create_Edit_And_Delete" name="Validating the creation of new training - Example #1.4" time="38.42">
-<system-out><![CDATA[
-Given launch the employee training url "http://10.192.190.130:3000/"........passed
-When click the add training button..........................................passed
-And verify the user is navigated to the add training page...................passed
-And Select the project name "3".............................................passed
-And enter the name of employee 7............................................passed
-And enter the course "CSharp"...............................................passed
-And enter the name of trainer 6.............................................passed
-And select the training type "3"............................................passed
-And enter the start date "05172025".........................................passed
-And enter the end date "05182025"...........................................passed
-And select the status "1"...................................................passed
-And enter the completion percentage 100.....................................passed
-And click the add button....................................................passed
-Then verify if the page is navigated to details page........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_React_Create_Edit_And_Delete" name="Validating the creation of new training - Example #1.5" time="37.054">
-<system-out><![CDATA[
-Given launch the employee training url "http://10.192.190.130:3000/"........passed
-When click the add training button..........................................passed
-And verify the user is navigated to the add training page...................passed
-And Select the project name "4".............................................passed
-And enter the name of employee 7............................................passed
-And enter the course "Java".................................................passed
-And enter the name of trainer 6.............................................passed
-And select the training type "2"............................................passed
-And enter the start date "11262025".........................................passed
-And enter the end date "11272025"...........................................passed
-And select the status "2"...................................................passed
-And enter the completion percentage 100.....................................passed
-And click the add button....................................................passed
-Then verify if the page is navigated to details page........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_React_Create_Edit_And_Delete" name="Edit first record sucessfully" time="10.229">
-<system-out><![CDATA[
-Given user in on react app page.............................................passed
-When user click on training summary.........................................passed
-Then verify user is on training records projectName, EmployeeName...........passed
-Then click edit on frist record.............................................passed
-And verify user is on edit training.........................................passed
-Then I change the employeename to "Arun" and the course to "Automation".....passed
-Then click on update button.................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_React_Create_Edit_And_Delete" name="Search course edit employee name first record" time="12.984">
-<system-out><![CDATA[
-Given user in on react app page.............................................passed
-When user click on training summary.........................................passed
-Then verify user is on training records projectName, EmployeeName...........passed
-Then search for course "Auto"...............................................passed
-Then click edit on frist record.............................................passed
-And verify user is on edit training.........................................passed
-Then I change the employeename to "Karthik".................................passed
-Then click on update button.................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_React_Create_Edit_And_Delete" name="Search employeename and course delete first record" time="13.462">
-<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//table//input[@aria-invalid=&quot;false&quot;][@type='text'])[3]&quot;}
-  (Session info: chrome=140.0.7339.208)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [931638a1d0c1b9c4f3ce9dc70a5ae512, findElement {using=xpath, value=(//table//input[@aria-invalid=&quot;false&quot;][@type='text'])[3]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\AARULF~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64403}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64403/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 931638a1d0c1b9c4f3ce9dc70a5ae512">
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//table//input[@aria-invalid="false"][@type='text'])[3]"}
-  (Session info: chrome=140.0.7339.208)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [931638a1d0c1b9c4f3ce9dc70a5ae512, findElement {using=xpath, value=(//table//input[@aria-invalid="false"][@type='text'])[3]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\AARULF~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64403}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64403/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 931638a1d0c1b9c4f3ce9dc70a5ae512
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
+	... 45 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import pages.ReactAppEdit cannot be resolved
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+
+	at stepdefinitions.ReactAppEditSteps.<init>(ReactAppEditSteps.java:9)
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at pages.ReactAppEdit.filterSearchCourse(ReactAppEdit.java:47)
-	at stepdefinitions.ReactAppEditSteps.search_for_course(ReactAppEditSteps.java:44)
-	at ✽.search for course "Auto"(file:///C:/Users/aarulfrancis/Downloads/Selenium-BDD-main%20(2)/Selenium-BDD-main/src/test/resources/features/reactAppEdit.feature:56)
+	... 48 more
 ]]>
 </failure>
 <system-out><![CDATA[
-Given user in on react app page.............................................passed
-When user click on training summary.........................................passed
-Then verify user is on training records projectName, EmployeeName...........passed
-Then search for employeename "karthik"......................................passed
-Then search for course "Auto"...............................................failed
+Given user in on react app page.............................................failed
+When user click on training summary.........................................skipped
+Then verify user is on training records projectName, EmployeeName...........skipped
+Then search for employeename "karthik"......................................skipped
+Then search for course "Automation".........................................skipped
 Then click delete on frist record...........................................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Web_React_Create_Edit_And_Delete" name="Search course and delete all records - Example #1.1" time="524.469">
-<system-out><![CDATA[
-Given user in on react app page.............................................passed
-When user click on training summary.........................................passed
-Then verify user is on training records projectName, EmployeeName...........passed
-Then search for course "Java"...............................................passed
-Then delete all records of "Java" course....................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_React_Create_Edit_And_Delete" name="Search course and delete all records - Example #1.2" time="399.796">
-<system-out><![CDATA[
-Given user in on react app page.............................................passed
-When user click on training summary.........................................passed
-Then verify user is on training records projectName, EmployeeName...........passed
-Then search for course "Selenium"...........................................passed
-Then delete all records of "Selenium" course................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_React_Create_Edit_And_Delete" name="Search course and delete all records - Example #1.3" time="215.977">
-<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for element ([[ChromeDriver: chrome on windows (b93e7b9f5771ffc7aa883226b284f93d)] -&gt; xpath: //td[text()='CSharp']]) to become stale (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\AARULF~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64604}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64604/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b93e7b9f5771ffc7aa883226b284f93d">
-<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element ([[ChromeDriver: chrome on windows (b93e7b9f5771ffc7aa883226b284f93d)] -> xpath: //td[text()='CSharp']]) to become stale (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\AARULF~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64604}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64604/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b93e7b9f5771ffc7aa883226b284f93d
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pages.ReactAppEdit.deleteAllByCourseRecords(ReactAppEdit.java:87)
-	at stepdefinitions.ReactAppEditSteps.delete_all_records_of_course(ReactAppEditSteps.java:60)
-	at ✽.delete all records of "CSharp" course(file:///C:/Users/aarulfrancis/Downloads/Selenium-BDD-main%20(2)/Selenium-BDD-main/src/test/resources/features/reactAppEdit.feature:65)
+<testcase classname="Web_React_Create_Edit_And_Delete" name="Search course and delete all records - Example #1.1" time="2.319">
+<failure type="io.cucumber.core.exception.CucumberException" message="Failed to instantiate class stepdefinitions.ReactAppEditSteps">
+<![CDATA[io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.ReactAppEditSteps
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
+	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
+	... 45 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import pages.ReactAppEdit cannot be resolved
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+
+	at stepdefinitions.ReactAppEditSteps.<init>(ReactAppEditSteps.java:9)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 48 more
 ]]>
 </failure>
 <system-out><![CDATA[
-Given user in on react app page.............................................passed
-When user click on training summary.........................................passed
-Then verify user is on training records projectName, EmployeeName...........passed
-Then search for course "CSharp".............................................passed
-Then delete all records of "CSharp" course..................................failed
+Given user in on react app page.............................................failed
+When user click on training summary.........................................skipped
+Then verify user is on training records projectName, EmployeeName...........skipped
+Then search for course "Selenium"...........................................skipped
+Then delete all records of "Selenium" course................................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Web_React_Create_Edit_And_Delete" name="filter by Start date and verify date with filter records" time="11.641">
+<testcase classname="Web_React_Create_Edit_And_Delete" name="Search course and delete all records - Example #2.1" time="2.846">
+<failure type="io.cucumber.core.exception.CucumberException" message="Failed to instantiate class stepdefinitions.ReactAppEditSteps">
+<![CDATA[io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.ReactAppEditSteps
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
+	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
+	... 45 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import pages.ReactAppEdit cannot be resolved
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+
+	at stepdefinitions.ReactAppEditSteps.<init>(ReactAppEditSteps.java:9)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 48 more
+]]>
+</failure>
 <system-out><![CDATA[
-Given user in on react app page.............................................passed
-When user click on training summary.........................................passed
-Then verify user is on training records projectName, EmployeeName...........passed
-And filter Start Date by "11262025".........................................passed
-Then verify filtered records have date "11/26/2025".........................passed
+Given user in on react app page.............................................failed
+When user click on training summary.........................................skipped
+Then verify user is on training records projectName, EmployeeName...........skipped
+Then search for course "CSharp".............................................skipped
+Then delete all records of "CSharp" course..................................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Web_AutomationExercise_Register_Functionality" name="Successful login" time="18.102">
+<testcase classname="Web_React_Create_Edit_And_Delete" name="Search course and delete all records - Example #2.2" time="2.956">
+<failure type="io.cucumber.core.exception.CucumberException" message="Failed to instantiate class stepdefinitions.ReactAppEditSteps">
+<![CDATA[io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.ReactAppEditSteps
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
+	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
+	... 45 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import pages.ReactAppEdit cannot be resolved
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+
+	at stepdefinitions.ReactAppEditSteps.<init>(ReactAppEditSteps.java:9)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 48 more
+]]>
+</failure>
 <system-out><![CDATA[
-Given User is on the login page.............................................passed
-When User enters username "testuser1@1991.com"..............................passed
-And User enters password "testuser123"......................................passed
-And User clicks the login button............................................passed
-Then Login should be successful.............................................passed
+Given user in on react app page.............................................failed
+When user click on training summary.........................................skipped
+Then verify user is on training records projectName, EmployeeName...........skipped
+Then search for course "Java"...............................................skipped
+Then delete all records of "Java" course....................................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Web_AutomationExercise_Register_Functionality" name="Successful login multiple users - Example #1.1" time="11.375">
+<testcase classname="Web_React_Create_Edit_And_Delete" name="filter by Start date and verify date with filter records" time="2.743">
+<failure type="io.cucumber.core.exception.CucumberException" message="Failed to instantiate class stepdefinitions.ReactAppEditSteps">
+<![CDATA[io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.ReactAppEditSteps
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:67)
+	at io.cucumber.core.backend.DefaultObjectFactory.getInstance(DefaultObjectFactory.java:45)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at io.cucumber.core.backend.DefaultObjectFactory.cacheNewInstance(DefaultObjectFactory.java:53)
+	... 45 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import pages.ReactAppEdit cannot be resolved
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+	ReactAppEdit cannot be resolved to a type
+
+	at stepdefinitions.ReactAppEditSteps.<init>(ReactAppEditSteps.java:9)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 48 more
+]]>
+</failure>
 <system-out><![CDATA[
-Given User is on the login page.............................................passed
-When User enters username "testuser1@1991.com"..............................passed
-And User enters password "testuser123"......................................passed
-And User clicks the login button............................................passed
-Then Login should be successful.............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_AutomationExercise_Register_Functionality" name="Successful login multiple users - Example #1.2" time="18.142">
-<system-out><![CDATA[
-Given User is on the login page.............................................passed
-When User enters username "testuser2@1992.com"..............................passed
-And User enters password "testuser1234".....................................passed
-And User clicks the login button............................................passed
-Then Login should be successful.............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_AutomationExercise_Register_Functionality" name="Logout User" time="11.689">
-<system-out><![CDATA[
-Given User is on the login page.............................................passed
-When User enters username "testuser1@1991.com"..............................passed
-When User enters password "testuser123".....................................passed
-When User clicks the login button...........................................passed
-Then User should be Logged in as "testuser1"................................passed
-Then Click Logout button....................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_AutomationExercise_Register_Functionality" name="verify test case page works" time="8.222">
-<system-out><![CDATA[
-Given Given User is on the home page........................................passed
-Then verify test cases option is visible....................................passed
-When clicks on test cases page..............................................passed
-Then user navigates to test page successfully...............................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_AutomationExercise_Register_Functionality" name="verify product searched in search option" time="11.231">
-<system-out><![CDATA[
-Given Given User is on the home page........................................passed
-Then click on product option................................................passed
-Then verify user is navigated to all products page..........................passed
-Then Enter product name in search input "T-shirt"...........................passed
-Then click searchoption button..............................................passed
-Then verify searched product is visible.....................................passed
-Then verify searched product "T-shirt" are visible..........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_AutomationExercise_Register_Functionality" name="Register User with existing email" time="10.955">
-<system-out><![CDATA[
-Given User is on the home page..............................................passed
-When clicks on the Click on Signup / Login button...........................passed
-Then Verify New User Signup is visible......................................passed
-Then enter name "testUser"..................................................passed
-Then already registered email address "testuser1@1991.com"..................passed
-When Click Signup button....................................................passed
-Then Verify error Email Address already exist is visible....................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_AutomationExercise_Register_Functionality" name="verify product details visible" time="9.796">
-<system-out><![CDATA[
-Given User is on the home page..............................................passed
-Then verify product option is visible.......................................passed
-When click on product option................................................passed
-Then verify user is navigated to all products page..........................passed
-When Click on View Product of first product.................................passed
-Then verify product name, price and availability............................passed
-]]></system-out>
-</testcase>
-<testcase classname="Web_AutomationExercise_Register_Functionality" name="ContactUs Form without file upload" time="13.116">
-<system-out><![CDATA[
-Given User is on the home page..............................................passed
-Then Verify Contact Us is visible...........................................passed
-When Click on Contact Us button.............................................passed
-Then enter name in contact us form "abcd"...................................passed
-Then enter email in contact us form "abcb@xyz.com"..........................passed
-Then enter subject in contact us form "Checking"............................passed
-Then enter message in contact us form "New Message".........................passed
-Then Click Submit in contact us form........................................passed
-When Click OK alert in contact us form......................................passed
-Then Verify success message is visible......................................passed
+Given user in on react app page.............................................failed
+When user click on training summary.........................................skipped
+Then verify user is on training records projectName, EmployeeName...........skipped
+And filter Start Date by "10062025".........................................skipped
+Then verify filtered records have date "10062025"...........................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

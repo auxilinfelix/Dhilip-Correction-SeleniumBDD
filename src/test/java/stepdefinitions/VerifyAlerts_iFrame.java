@@ -36,14 +36,12 @@ public class VerifyAlerts_iFrame extends BaseClass {
         winWait(1000);
         driver.switchTo().parentFrame();
         System.out.println("Switched to parent frame");
-
     }
 
     @Given("I navigate to the automation practice page")
     public void i_navigate_to_the_automation_practice_page() throws InterruptedException {
         driver.get("https://rahulshettyacademy.com/AutomationPractice/");
         winWait(2000);
-
     }
 
     @When("I enter {string} in the alert textbox")
@@ -51,7 +49,6 @@ public class VerifyAlerts_iFrame extends BaseClass {
         WebElement element = driver.findElement(By.xpath("//input[@id='name']"));
         sendKeys(element, data1);
         winWait(2000);
-
     }
 
     @When("I click on the Alert button")
@@ -76,7 +73,6 @@ public class VerifyAlerts_iFrame extends BaseClass {
         Alert simpleAlert = driver.switchTo().alert();
         simpleAlert.accept();
         winWait(2000);
-
     }
 
     @When("I click on the Confirm button")
@@ -84,7 +80,6 @@ public class VerifyAlerts_iFrame extends BaseClass {
         WebElement confirmBtn = driver.findElement(By.xpath("//input[@id='confirmbtn'][@value='Confirm']"));
         click(confirmBtn);
         winWait(2000);
-
     }
 
     @Then("a confirm box with text containing {string} should appear")
@@ -102,7 +97,6 @@ public class VerifyAlerts_iFrame extends BaseClass {
         Alert confirmAlert = driver.switchTo().alert();
         confirmAlert.dismiss();
         winWait(2000);
-
     }
 
 }

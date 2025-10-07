@@ -1,7 +1,6 @@
 package runners;
 
 import org.junit.runner.RunWith;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
@@ -13,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
                 "junit:target/junit-results.xml",
                 "json:target/cucumber.json"
         }, monochrome = true,
-        // tags = "@smoke_API",
+         tags = "@regression_check",
         dryRun = false)
 public class TestRunner {
 
